@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Easy Pop - Brain Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <!-- স্টার্ট ও গেম ওভার স্ক্রিন -->
+        <div id="status-screen" class="screen">
+            <h1 id="screen-title">🎈 EASY NUMBER POP</h1>
+            <p id="screen-desc">খুবই সহজ খেলা! স্ক্রিনে যে নাম্বারটি (Target) দেখাবে, নিচে ভাসমান কার্ডগুলোর মধ্য থেকে ঠিক সেই নাম্বারটিতে দ্রুত ট্যাপ করুন।</p>
+            <button id="action-btn" class="btn-action">খেলা শুরু করুন</button>
+        </div>
+
+        <!-- মেইন গেম ইন্টারফেস -->
+        <div class="header-area">
+            <h1>EASY POP</h1>
+            <div class="score-badge">স্কোর: <span id="score">0</span></div>
+        </div>
+
+        <div class="timer-container">
+            <div id="timer-bar" class="timer-bar"></div>
+        </div>
+
+        <div class="target-box">
+            <div class="target-label">খুঁজে বের করুন:</div>
+            <div id="target-val" class="target-num">০</div>
+        </div>
+
+        <div id="choices-grid" class="choices-grid">
+            <!-- জাভাস্ক্রিপ্ট দিয়ে ৩টি সহজ বড় কার্ড তৈরি হবে -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
